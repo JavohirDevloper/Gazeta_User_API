@@ -1,0 +1,33 @@
+POST http://localhost:7777/desc
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+Content-Type: application/json
+
+{
+ "userId":"2",
+ "name": "Darakchi gazetasiga",
+ "description": "20023-yil Prezident Saylov adolatli buldi"
+}
+
+###
+GET http://localhost:7777/desc
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+Content-Type: application/json
+
+###
+GET http://localhost:7777/desc/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+Content-Type: application/json
+
+###
+PATCH http://localhost:7777/desc/23
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+Content-Type: application/json
+
+{
+  "name": "So'g'diyona gazetasiga"
+}
+
+###
+DELETE http://localhost:7777/desc/7
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+Content-Type: application/json

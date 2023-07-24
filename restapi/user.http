@@ -1,0 +1,36 @@
+GET http://localhost:7777/users/me
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+
+###
+POST http://localhost:7777/users/register
+Content-Type: application/json
+
+{
+    "first_name": "Javohir",
+    "last_name": "Muhammadiyev",
+    "username": "javohirjon123",
+    "password": "foobar"
+}
+
+###
+POST http://localhost:7777/users/login
+Content-Type: application/json
+
+{
+    "username": "javohirjon",
+    "password": "foobar"
+}
+
+###
+PATCH http://localhost:7777/users/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+Content-Type: application/json
+
+{
+    "first_name": "Javohir"
+}
+
+###
+DELETE  http://localhost:7777/users/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxN30sImlhdCI6MTY5MDIxMjMzMH0.7ZC1QG8IYX7te142T9TixIbgYtcsZwo0ieCSGG-o9pM
+
